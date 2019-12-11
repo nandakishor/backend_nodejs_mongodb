@@ -11,3 +11,4 @@ mongoose.connect(url, { useNewUrlParser: true }, function (err, db) {
 })
 
 const course = require("./course.model");
+const user = require("./user.model")
