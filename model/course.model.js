@@ -17,6 +17,6 @@ var CourseSchema = mongoose.Schema({
     departmentName:{
         type: String
     }
-});
+}, {collection: 'course'});
 
 mongoose.model("Course", CourseSchema)

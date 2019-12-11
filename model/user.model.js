@@ -19,14 +19,17 @@ var emailSchema = mongoose.Schema({
 });
 
 var addressSchema = mongoose.Schema({
-    houseNumber: { type: String },
-    street: { type: String },
-    city: { type: String },
-    state: { type: String },
-    country: { type: String },
-    pin: {
-        type: Number,
-        required: true
+    type: String,
+    address:{
+        houseNumber: { type: String },
+        street: { type: String },
+        city: { type: String },
+        state: { type: String },
+        country: { type: String },
+        pin: {
+            type: Number,
+            required: true
+        }
     }
 });
 
@@ -66,6 +69,6 @@ var userInformationSchema = mongoose.Schema({
         maxlength: 15
     },
     contactDetails: [contactDetailsSchema]
-});
+}, {collection: 'user'});
 
 mongoose.model("User", userInformationSchema);
