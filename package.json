@@ -1,0 +1,18 @@
+{
+  "name": "backend_nodejs_mongodb",
+  "version": "1.0.0",
+  "description": "NodeJS ExpressJS MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "nandakishor",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.8.0",
+    "nodemon": "^2.0.1"
+  }
+}
